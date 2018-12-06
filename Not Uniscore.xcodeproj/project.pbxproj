@@ -18,9 +18,11 @@
 		9FD91FD021B9819100A43D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD91FCE21B9819100A43D43 /* Main.storyboard */; };
 		9FD91FD221B9819200A43D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD91FD121B9819200A43D43 /* Assets.xcassets */; };
 		9FD91FD521B9819200A43D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD91FD321B9819200A43D43 /* LaunchScreen.storyboard */; };
+		E6E2325C4AFFE738805C6A12 /* Pods_Not_Uniscore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D2A5C17C6B802A24D8EC9C /* Pods_Not_Uniscore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1308B7328805D21C2364DBB1 /* Pods-Not Uniscore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Uniscore.release.xcconfig"; path = "Pods/Target Support Files/Pods-Not Uniscore/Pods-Not Uniscore.release.xcconfig"; sourceTree = "<group>"; };
 		9F2E096421B9824200E7E836 /* Uni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uni.swift; sourceTree = "<group>"; };
 		9F2E096621B9850F00E7E836 /* UniManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniManager.swift; sourceTree = "<group>"; };
 		9F2E096821B9856700E7E836 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		9FD91FD121B9819200A43D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD91FD421B9819200A43D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD91FD621B9819200A43D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A579DD9B4CD1AF4744D6F80E /* Pods-Not Uniscore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Uniscore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Not Uniscore/Pods-Not Uniscore.debug.xcconfig"; sourceTree = "<group>"; };
+		E6D2A5C17C6B802A24D8EC9C /* Pods_Not_Uniscore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Not_Uniscore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E2325C4AFFE738805C6A12 /* Pods_Not_Uniscore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9592E0AE7E7EFC3D11E6D1D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6D2A5C17C6B802A24D8EC9C /* Pods_Not_Uniscore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FD91FBE21B9819100A43D43 = {
 			isa = PBXGroup;
 			children = (
 				9FD91FC921B9819100A43D43 /* Not Uniscore */,
 				9FD91FC821B9819100A43D43 /* Products */,
+				CA4E610B637FFE0478EF0F7C /* Pods */,
+				9592E0AE7E7EFC3D11E6D1D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +97,15 @@
 			path = "Not Uniscore";
 			sourceTree = "<group>";
 		};
+		CA4E610B637FFE0478EF0F7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A579DD9B4CD1AF4744D6F80E /* Pods-Not Uniscore.debug.xcconfig */,
+				1308B7328805D21C2364DBB1 /* Pods-Not Uniscore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FD91FD921B9819200A43D43 /* Build configuration list for PBXNativeTarget "Not Uniscore" */;
 			buildPhases = (
+				11182D0F85735878DE1A0115 /* [CP] Check Pods Manifest.lock */,
 				9FD91FC321B9819100A43D43 /* Sources */,
 				9FD91FC421B9819100A43D43 /* Frameworks */,
 				9FD91FC521B9819100A43D43 /* Resources */,
+				F49BA3396B558086158CE847 /* [CP] Embed Pods Frameworks */,
+				9AC7577BE6EC2BD4D4FAAD16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +174,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11182D0F85735878DE1A0115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Not Uniscore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC7577BE6EC2BD4D4FAAD16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Not Uniscore/Pods-Not Uniscore-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Not Uniscore/Pods-Not Uniscore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F49BA3396B558086158CE847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Not Uniscore/Pods-Not Uniscore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Not Uniscore/Pods-Not Uniscore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FD91FC321B9819100A43D43 /* Sources */ = {
@@ -304,6 +402,7 @@
 		};
 		9FD91FDA21B9819200A43D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A579DD9B4CD1AF4744D6F80E /* Pods-Not Uniscore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +420,7 @@
 		};
 		9FD91FDB21B9819200A43D43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1308B7328805D21C2364DBB1 /* Pods-Not Uniscore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

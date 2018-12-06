@@ -1,20 +1,26 @@
-//
-//  ViewController.swift
-//  Not Uniscore
-//
-//  Created by Jake Steptoe on 06/12/2018.
-//  Copyright © 2018 Jake Steptoe. All rights reserved.
-//
-
 import UIKit
+import MapKit
+import Firebase
+
 
 class ViewController: UIViewController {
-
+    
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mapView.userTrackingMode = .follow
+        
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self as? CLLocationManagerDelegate
+        locationManager.startUpdatingLocation()
+        
+        for Uni in MTLCaptureManager.uni {
+            locationManager.startMonitoring(for: uni.region)
+            mapView.addAnnotation(uni)
+        }
+        
     }
-
-
+    
 }
-

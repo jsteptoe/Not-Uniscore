@@ -3,6 +3,7 @@ import MapKit
 
 class Uni: NSObject, MKAnnotation {
     
+    
     var coordinate: CLLocationCoordinate2D
     var title: String?
     let region: CLCircularRegion
@@ -14,3 +15,5 @@ class Uni: NSObject, MKAnnotation {
     }
     
 }
+
+

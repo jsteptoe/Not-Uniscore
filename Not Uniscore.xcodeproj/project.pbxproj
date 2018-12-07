@@ -83,18 +83,18 @@
 		9FD91FC921B9819100A43D43 /* Not Uniscore */ = {
 			isa = PBXGroup;
 			children = (
-				9F2E097421B98AF200E7E836 /* GoogleService-Info.plist */,
 				9FD91FCA21B9819100A43D43 /* AppDelegate.swift */,
 				9FD91FCC21B9819100A43D43 /* ViewController.swift */,
-				9F2E096421B9824200E7E836 /* Uni.swift */,
-				9F2E096621B9850F00E7E836 /* UniManager.swift */,
 				9F2E096821B9856700E7E836 /* MapViewController.swift */,
 				9F2E096A21B9859400E7E836 /* StudentViewController.swift */,
+				9F2E096421B9824200E7E836 /* Uni.swift */,
+				9F2E096621B9850F00E7E836 /* UniManager.swift */,
 				9F2E096C21B985C100E7E836 /* AppContainerViewController.swift */,
 				9F2E096E21B985D500E7E836 /* AppManager.swift */,
 				9FD91FCE21B9819100A43D43 /* Main.storyboard */,
 				9FD91FD121B9819200A43D43 /* Assets.xcassets */,
 				9FD91FD321B9819200A43D43 /* LaunchScreen.storyboard */,
+				9F2E097421B98AF200E7E836 /* GoogleService-Info.plist */,
 				9FD91FD621B9819200A43D43 /* Info.plist */,
 			);
 			path = "Not Uniscore";

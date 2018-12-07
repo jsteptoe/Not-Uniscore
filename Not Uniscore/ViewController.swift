@@ -4,6 +4,7 @@ import Firebase
 
 
 class ViewController: UIViewController {
+    @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
     

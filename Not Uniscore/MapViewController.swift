@@ -9,20 +9,15 @@ class MapViewController: UIViewController {
 
 extension MapViewController: CLLocationManagerDelegate {
     
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        for annotation in mapView.annotations {
-            if annotation.title == region.identifier {
-                guard let annotationView = mapView.view(for: annotation) as? MKMarkerAnnotationView else { return }
-                annotationView.markerTintColor = .green
-            }
-        }
-    }
+
     
+ 
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locations.last!)
         
     }
+    
     
     private func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         
@@ -32,7 +27,17 @@ extension MapViewController: CLLocationManagerDelegate {
 
 extension MapViewController: MKMapViewDelegate {
     
-    private func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+            for annotation in mapView.annotations {
+                if annotation.title == region.identifier {
+                    guard let annotationView = mapView.view(for: annotation) as? MKMarkerAnnotationView else { return }
+                    annotationView.markerTintColor = .green
+                }
+            }
+        }
+        
         
         guard let annotation = annotation as? Uni else { return nil }
         

@@ -17,10 +17,7 @@ class ViewController: UIViewController {
         locationManager.delegate = self as? CLLocationManagerDelegate
         locationManager.startUpdatingLocation()
         
-        for Uni in MTLCaptureManager.uni {
-            locationManager.startMonitoring(for: uni.region)
-            mapView.addAnnotation(uni)
-        }
+        
         
     }
     

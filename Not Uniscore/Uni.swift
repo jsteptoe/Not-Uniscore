@@ -1,6 +1,8 @@
 import Foundation
 import MapKit
 
+//the class is the container for all of the uni information- the coordinate, region and title
+
 class Uni: NSObject, MKAnnotation {
     
     

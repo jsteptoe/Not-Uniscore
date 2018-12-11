@@ -11,6 +11,9 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //zoom in on map
+        mapView.setCenter(clubManager.clubs [0].coordinate, animated: true)
+        
         mapView.userTrackingMode = .follow
         
         locationManager.requestAlwaysAuthorization()

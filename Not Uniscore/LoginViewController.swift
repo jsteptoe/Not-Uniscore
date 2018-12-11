@@ -2,6 +2,10 @@
 import Foundation
 import Firebase
 
+protocol SendDelegate {
+    func userPressedLogin(data: String)
+}
+
 class LoginViewController: UIViewController {
 
     
@@ -10,4 +14,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
+
+
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "showSecondVC" {
+        let MapViewController: MapViewController = segue.destination as! MapViewController
+        MapViewController.delegate = self
+        
+}
+}
 }

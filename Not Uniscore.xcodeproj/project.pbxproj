@@ -87,6 +87,7 @@
 			children = (
 				9FD91FCA21B9819100A43D43 /* AppDelegate.swift */,
 				9FD91FCC21B9819100A43D43 /* ViewController.swift */,
+				9FD9873221BA87D1003EFDC5 /* LoginViewController.swift */,
 				9F2E096821B9856700E7E836 /* MapViewController.swift */,
 				9F2E096A21B9859400E7E836 /* StudentViewController.swift */,
 				9F2E096421B9824200E7E836 /* Uni.swift */,
@@ -94,7 +95,6 @@
 				9F2E096C21B985C100E7E836 /* AppContainerViewController.swift */,
 				9F2E096E21B985D500E7E836 /* AppManager.swift */,
 				9FD91FCE21B9819100A43D43 /* Main.storyboard */,
-				9FD9873221BA87D1003EFDC5 /* LoginViewController.swift */,
 				9FD91FD121B9819200A43D43 /* Assets.xcassets */,
 				9FD91FD321B9819200A43D43 /* LaunchScreen.storyboard */,
 				9F2E097421B98AF200E7E836 /* GoogleService-Info.plist */,

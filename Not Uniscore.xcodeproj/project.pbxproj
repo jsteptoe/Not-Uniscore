@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A40918A21C016CE00BBC265 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A40918921C016CE00BBC265 /* MapViewController.swift */; };
 		9F2E096521B9824200E7E836 /* Uni.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E096421B9824200E7E836 /* Uni.swift */; };
 		9F2E096721B9850F00E7E836 /* UniManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E096621B9850F00E7E836 /* UniManager.swift */; };
 		9F2E096B21B9859400E7E836 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E096A21B9859400E7E836 /* StudentViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1308B7328805D21C2364DBB1 /* Pods-Not Uniscore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Uniscore.release.xcconfig"; path = "Pods/Target Support Files/Pods-Not Uniscore/Pods-Not Uniscore.release.xcconfig"; sourceTree = "<group>"; };
+		5A40918921C016CE00BBC265 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9F2E096421B9824200E7E836 /* Uni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uni.swift; sourceTree = "<group>"; };
 		9F2E096621B9850F00E7E836 /* UniManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniManager.swift; sourceTree = "<group>"; };
 		9F2E096A21B9859400E7E836 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				9FD91FCA21B9819100A43D43 /* AppDelegate.swift */,
 				9FD91FCC21B9819100A43D43 /* ViewController.swift */,
+				5A40918921C016CE00BBC265 /* MapViewController.swift */,
 				9FD9873221BA87D1003EFDC5 /* LoginViewController.swift */,
 				9F2E096A21B9859400E7E836 /* StudentViewController.swift */,
 				9F2E096421B9824200E7E836 /* Uni.swift */,
@@ -261,6 +264,7 @@
 				9FD91FCD21B9819100A43D43 /* ViewController.swift in Sources */,
 				9F2E096521B9824200E7E836 /* Uni.swift in Sources */,
 				9F2E096721B9850F00E7E836 /* UniManager.swift in Sources */,
+				5A40918A21C016CE00BBC265 /* MapViewController.swift in Sources */,
 				9FD91FCB21B9819100A43D43 /* AppDelegate.swift in Sources */,
 				9F2E096D21B985C100E7E836 /* AppContainerViewController.swift in Sources */,
 				9FD9873321BA87D1003EFDC5 /* LoginViewController.swift in Sources */,

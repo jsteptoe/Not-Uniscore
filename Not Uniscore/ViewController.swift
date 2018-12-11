@@ -3,7 +3,7 @@ import MapKit
 import Firebase
 
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         mapView.userTrackingMode = .follow
         
         locationManager.requestAlwaysAuthorization()
-        locationManager.delegate = self as? CLLocationManagerDelegate
+        locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
         
@@ -22,11 +22,7 @@ class ViewController: UIViewController {
     }
     
 }
-class MapViewController: UIViewController {
-    
-    
-    
-}
+
 
 extension MapViewController: CLLocationManagerDelegate {
     

@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showSecondVC" {
         let MapViewController: MapViewController = segue.destination as! MapViewController
-         destination.uni = (sender as! Uni)
+       
         
 }
 }

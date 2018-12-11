@@ -13,7 +13,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         //zoom in on map
-        mapView.setCenter(uniManager.uni [0].coordinate, animated: true)
+        mapView.setCenter(UniManager.uni [0].coordinate, animated: true)
         
         //tracks user
         mapView.userTrackingMode = .follow

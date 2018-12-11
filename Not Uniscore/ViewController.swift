@@ -2,10 +2,11 @@ import UIKit
 import MapKit
 import Firebase
 
-
+//class is the container for everything
 class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
+    //constant name and function
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -14,8 +15,10 @@ class MapViewController: UIViewController {
         //zoom in on map
         mapView.setCenter(uniManager.uni [0].coordinate, animated: true)
         
+        //tracks user
         mapView.userTrackingMode = .follow
         
+        //pop up notification for allowing access
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
@@ -26,7 +29,7 @@ class MapViewController: UIViewController {
     
 }
 
-
+//enters and identifies region, shows on mapView
 extension MapViewController: CLLocationManagerDelegate {
     
     
@@ -38,13 +41,13 @@ extension MapViewController: CLLocationManagerDelegate {
         
     }
     
-    
+    //exitsregion
     private func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         
     }
     
 }
-
+//brings up the annotation and tells it where to bring it up
 extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

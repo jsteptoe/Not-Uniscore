@@ -24,13 +24,15 @@ class MapViewController: UIViewController {
         locationManager.delegate = self as? CLLocationManagerDelegate
         locationManager.startUpdatingLocation()
         
-        for Uni in UniManager.uni {
+        for uni in UniManager.uni {
             locationManager.startMonitoring(for: uni.region)
             mapView.addAnnotation(uni)
         
         //addAnnotation
         
     }
+    
+}
     
 }
 
@@ -85,4 +87,4 @@ extension MapViewController: MKMapViewDelegate {
     }
     
 }
-}
+

@@ -25,7 +25,7 @@ class MapViewController: UIViewController {
         locationManager.delegate = self as? CLLocationManagerDelegate
         locationManager.startUpdatingLocation()
         
-        for uni in UniManager.uni {
+        for uni in uniManager.uni {
             locationManager.startMonitoring(for: uni.region)
             mapView.addAnnotation(uni)
         

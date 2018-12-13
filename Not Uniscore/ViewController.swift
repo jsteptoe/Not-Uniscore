@@ -9,6 +9,7 @@ class MapViewController: UIViewController {
     
     //constant name and function
     let locationManager = CLLocationManager()
+    let uniManager = UniManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()

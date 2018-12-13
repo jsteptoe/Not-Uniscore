@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MapViewController" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7Tj-n9-e4h">
-                                <rect key="frame" x="0.0" y="0.0" width="391" height="667"/>
+                                <rect key="frame" x="-50" y="-71" width="474" height="809"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
@@ -32,7 +32,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="1110"/>
+            <point key="canvasLocation" x="2348" y="1109.5952023988007"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="dn0-jo-LaR">

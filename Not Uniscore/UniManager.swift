@@ -2,9 +2,7 @@ import Foundation
 import CoreLocation
 
 class UniManager {
-    
-  
-    
+
     var uni = [Uni]()
     
     init() {

@@ -4,6 +4,7 @@ import Firebase
 
 //class is the container for everything
 class MapViewController: UIViewController {
+    
     @IBOutlet weak var mapView: MKMapView!
     
     //constant name and function
@@ -13,7 +14,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         //zoom in on map
-        mapView.setCenter(UniManager.uni [0].coordinate, animated: true)
+        //mapView.setCenter(UniManager.coordinate, animated: true)
         
         //tracks user
         mapView.userTrackingMode = .follow
@@ -23,7 +24,7 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
-        
+        //addAnnotation
         
     }
     
@@ -31,10 +32,6 @@ class MapViewController: UIViewController {
 
 //enters and identifies region, shows on mapView
 extension MapViewController: CLLocationManagerDelegate {
-    
-    
-    
-    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locations.last!)

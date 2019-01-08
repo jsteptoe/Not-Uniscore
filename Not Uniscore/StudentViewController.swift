@@ -33,6 +33,7 @@ class StudentViewController: UIViewController {
     
     
     func newVisit() {
+        let timestamp = Timestamp(date: Date())
         
     }
     

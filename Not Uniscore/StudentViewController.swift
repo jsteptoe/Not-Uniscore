@@ -1,7 +1,7 @@
 import UIKit
 import Firebase
 
-class StudentViewController: UIViewController {
+class StudentViewController: UIViewController,  {
     
     let database = ["One", "Two", "Three"]
     
@@ -9,10 +9,18 @@ class StudentViewController: UIViewController {
         super.viewDidLoad()
         
         //Auth.auth().currentUser!.uid
-        
-        
         gotToUni()
     }
+    
+    //in cell for row at
+    //db = firestore.firestore()
+    //loadData()
+    
+    //self.tableView = reloadData
+    
+    //custom cell
+    //title
+
     
     
     func gotToUni() {
@@ -22,7 +30,8 @@ class StudentViewController: UIViewController {
             let lastUpdated = document!.data()!["date"] as! Timestamp
             
             if self.hasVisitedToday(date: lastUpdated.dateValue()) {
-                print("has visited already ")
+                print("has visited already")
+                print()
             } else {
                 self.newVisit()
             }
@@ -34,6 +43,7 @@ class StudentViewController: UIViewController {
     
     func newVisit() {
         let timestamp = Timestamp(date: Date())
+        
         
     }
     

@@ -1,10 +1,13 @@
 import UIKit
 import Firebase
 
-class StudentViewController: UIViewController,  {
+class StudentViewController: UIViewController {
+    
+    class StudentDatabase: UITableView{
+        
     
     let database = ["One", "Two", "Three"]
-    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -12,11 +15,11 @@ class StudentViewController: UIViewController,  {
         gotToUni()
     }
     
-    //in cell for row at
-    //db = firestore.firestore()
-    //loadData()
+    in cell for row at
+    db = firestore.firestore()
+    loadData()
     
-    //self.tableView = reloadData
+    self.tableView = reloadData
     
     //custom cell
     //title
